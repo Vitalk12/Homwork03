@@ -29,13 +29,7 @@ a {
   text-decoration: none;
 }
 /* Header */
-
-.header-container {
-  display: flex;
   
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 .header-navigation {
   display: flex;
 margin-left: auto;
@@ -103,22 +97,15 @@ margin-left: 76px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: solid red;
 }
 
 /* SOLUTIONS */
 .solutions {
+background: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
   outline: solid red;
-}
-.sollut-container {
-  background: var(--NAVY-BLUE, #2e2f42);
-  padding-bottom: 80px;
   padding-top: 188px;
-  padding-bottom: 292px;
-  padding-left: 472px;
-  padding-right: 472px;
-  height: 600px;
+  padding-bottom: 188px;
 }
 .solutions-title {
   color: var(--WHITE, #fff);
@@ -127,6 +114,8 @@ margin-left: 76px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
   max-width: 496px;
 }
@@ -151,6 +140,10 @@ margin-left: 76px;
   border-radius: 4px;
 }
 /* Advantages */
+.advantages{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .advantages-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
@@ -158,25 +151,30 @@ margin-left: 76px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 120px;
+ 
 }
 .advantages-list {
   display: flex;
   gap: 24px;
 }
-.advantages-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  padding-left: 156px;
-  padding-right: 156px;
-}
+
 .advantages-list-text {
   color: var(--SLATE, #434455);
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 120px;
 }
 /* Our Team */
+.our-team{
+  background: var(--CLOUD, #F4F4FD);
+  padding-left: 156px;
+  padding-right: 156px;
+  padding-bottom: 120px;
+}
+
 .our-team-list {
   display: flex;
   gap: 24px;
@@ -218,6 +216,10 @@ margin-left: 76px;
   margin-bottom: 32px;
 }
 /* PORTFOLIO */
+.portfolio{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .portfolio-title {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -259,8 +261,15 @@ margin-left: 76px;
 }
 
 /* FOOTER */
-.footer-container {
+.footer{
   background: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 140px;
+  padding-left: 156px;
+  padding-bottom: 100px;
+  padding-right: 1020px;
+}
+.footer-container {
+  
   padding-top: 101.5px;
   height: 312px;
 }
@@ -293,8 +302,5 @@ margin-left: 76px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 156px;
-  padding-right: 1020px;
-  padding-bottom: 100px;
-  margin-top: 17.5px;
+  max-width: 264px;
 }
