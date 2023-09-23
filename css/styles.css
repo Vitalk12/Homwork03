@@ -29,16 +29,23 @@ a {
   text-decoration: none;
 }
 /* Header */
-  
+
+  .header{
+    border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+  }
+ 
 .header-navigation {
   display: flex;
-margin-left: auto;
+
 }
 .header-soc {
   display: flex;
-  gap: 40px;
 
 }
+
 .header-logo {
   color: var(--IRIS, #4d5ae5);
   font-family: Raleway, sans-serif;
@@ -47,7 +54,7 @@ margin-left: auto;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 156px;
+
 }
 .header-logo-studio {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -57,6 +64,7 @@ margin-left: auto;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+margin-right: 76px;
 }
 .header-menu-link {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -81,6 +89,7 @@ margin-left: auto;
 }
 .address {
   font-style: normal;
+ 
 }
 
 .header-menu-list {
@@ -88,7 +97,6 @@ margin-left: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-margin-left: 76px;
   display: flex;
   gap: 40px;
 }
@@ -126,6 +134,7 @@ background: var(--NAVY-BLUE, #2e2f42);
   background-color: #404bbf;
 }
 .solutions-btn {
+  display: block;
   color: var(--WHITE, #fff);
   text-align: center;
   background: var(--IRIS, #4d5ae5);
@@ -138,8 +147,22 @@ background: var(--NAVY-BLUE, #2e2f42);
   width: 169px;
   height: 56px;
   border-radius: 4px;
+  min-width: 169px;
+  border: none;
 }
 /* Advantages */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .advantages{
   padding-top: 120px;
   padding-bottom: 120px;
@@ -151,30 +174,35 @@ background: var(--NAVY-BLUE, #2e2f42);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 120px;
+  margin-bottom: 8px;
  
 }
 .advantages-list {
   display: flex;
   gap: 24px;
+  
 }
-
+.advantages-list-item{
+ width:calc((100% - 72px) / 4); 
+}
 .advantages-list-text {
   color: var(--SLATE, #434455);
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 120px;
+  max-width: 264px;
 }
 /* Our Team */
 .our-team{
   background: var(--CLOUD, #F4F4FD);
-  padding-left: 156px;
-  padding-right: 156px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
-
+.name-container{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .our-team-list {
   display: flex;
   gap: 24px;
@@ -199,12 +227,15 @@ background: var(--NAVY-BLUE, #2e2f42);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .our-team-list-item {
   background: var(--WHITE, #fff);
   text-align: center;
    width: calc((100% - 72px) / 4);
+   border-radius: 0px 0px 4px 4px;
 }
 .our-team-text {
   color: var(--SLATE, #434455);
@@ -214,11 +245,17 @@ background: var(--NAVY-BLUE, #2e2f42);
   letter-spacing: 0.02em;
   margin-top: 8px;
   margin-bottom: 32px;
+  text-align: center;
 }
 /* PORTFOLIO */
 .portfolio{
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.portfolio-container{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
+  border-top: none;
 }
 .portfolio-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -229,8 +266,8 @@ background: var(--NAVY-BLUE, #2e2f42);
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 120px;
   padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
@@ -258,20 +295,14 @@ background: var(--NAVY-BLUE, #2e2f42);
 .portfolio-list-item {
   background: var(--WHITE, #fff);
    width: calc((100% - 48px) / 3);
+   row-gap: 48px;
 }
 
 /* FOOTER */
 .footer{
   background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 140px;
-  padding-left: 156px;
+  padding-top: 100px;
   padding-bottom: 100px;
-  padding-right: 1020px;
-}
-.footer-container {
-  
-  padding-top: 101.5px;
-  height: 312px;
 }
 .footer-logo {
   color: var(--IRIS, #4d5ae5);
@@ -281,9 +312,9 @@ background: var(--NAVY-BLUE, #2e2f42);
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   padding-left: 156px;
-  padding-bottom: 189.5px;
+  padding-bottom: 16px;
+  display: inline-block; 
 }
 .footer-logo-studio {
   color: var(--CLOUD, #f4f4fd);
