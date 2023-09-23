@@ -34,15 +34,24 @@ a {
     border-bottom: 1px solid #e7e9fc;
     padding-top: 24px;
     padding-bottom: 24px;
-    display: flex;
+    
   }
- 
-.header-navigation {
+ .header-container{
   display: flex;
-
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: solid red;
+  
+  
+ }
+.header-navigation {
+  align-items: center;
+  display: flex; 
 }
 .header-soc {
   display: flex;
+
 
 }
 
@@ -54,7 +63,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+margin-right: 76px;
 }
 .header-logo-studio {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -64,7 +73,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-margin-right: 76px;
+
 }
 .header-menu-link {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -89,7 +98,6 @@ margin-right: 76px;
 }
 .address {
   font-style: normal;
- 
 }
 
 .header-menu-list {
@@ -101,7 +109,7 @@ margin-right: 76px;
   gap: 40px;
 }
 .container {
- max-width: 1158px;
+ width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -111,7 +119,6 @@ margin-right: 76px;
 .solutions {
 background: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
-  outline: solid red;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -149,8 +156,15 @@ background: var(--NAVY-BLUE, #2e2f42);
   border-radius: 4px;
   min-width: 169px;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Advantages */
+
+.advantages{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -163,10 +177,7 @@ background: var(--NAVY-BLUE, #2e2f42);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.advantages{
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .advantages-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
@@ -179,8 +190,7 @@ background: var(--NAVY-BLUE, #2e2f42);
 }
 .advantages-list {
   display: flex;
-  gap: 24px;
-  
+  gap: 24px; 
 }
 .advantages-list-item{
  width:calc((100% - 72px) / 4); 
@@ -273,7 +283,7 @@ background: var(--NAVY-BLUE, #2e2f42);
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
- 
+
 }
 
 .portfolio-list-title {
@@ -295,7 +305,7 @@ background: var(--NAVY-BLUE, #2e2f42);
 .portfolio-list-item {
   background: var(--WHITE, #fff);
    width: calc((100% - 48px) / 3);
-   row-gap: 48px;
+    row-gap: 48px;
 }
 
 /* FOOTER */
@@ -312,7 +322,6 @@ background: var(--NAVY-BLUE, #2e2f42);
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-left: 156px;
   padding-bottom: 16px;
   display: inline-block; 
 }
