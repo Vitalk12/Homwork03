@@ -37,11 +37,6 @@ a {
 }
 .header-container {
   display: flex;
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: solid red;
 }
 .header-navigation {
   align-items: center;
@@ -52,10 +47,6 @@ a {
   gap: 40px;
  
 }
-.header-soc-item{
-   
-}
-
 .header-logo {
   color: var(--IRIS, #4d5ae5);
   font-family: Raleway, sans-serif;
@@ -83,6 +74,8 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top:24px;
+  padding-bottom:24px;
 }
 .header-menu-link:hover {
   color: var(--OCEAN, #404bbf);
@@ -109,8 +102,7 @@ a {
   letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
   
 }
 .container {
